@@ -1,0 +1,117 @@
+Filename: sre.txt
+Project Title: Elegant & Interactive Portfolio Website
+
+1. Objective
+Design and develop a visually stunning, fully responsive personal portfolio website to showcase professional skills, past projects, resume, and contact details. The site should reflect a modern, clean aesthetic and leave a strong impression on recruiters and visitors.
+
+2. Functional Requirements
+Homepage (Hero Section)
+
+Animated name + tagline.
+
+Background animation or subtle gradient effect.
+
+Call-to-action buttons (e.g., “View Projects”, “Get Resume”).
+
+About Me
+
+Professional photo or avatar.
+
+Short bio.
+
+Key skills and interests listed visually (icons/chips).
+
+Skills
+
+Categorized technical and soft skills.
+
+Skill bars or animated proficiency rings.
+
+Hover interactions for brief skill usage context.
+
+Experience
+
+Timeline view of work and internships.
+
+Each item has role, duration, and brief impact summary.
+
+Achievement : 
+
+4 cards for these coding websites clickable to original id
+Leetcode
+Codeforces
+Atcoder
+Codechef 
+
+then scrap other achivements from resume
+
+Projects
+
+Showcase of 5-6 top projects.
+
+Project cards with:
+
+Title
+
+Description
+
+Tech stack used
+
+Live link + GitHub repo
+
+Modal or separate project detail view.
+
+Contact
+
+Form with name, email, message (email integration with validation).
+
+Social media links (icons: GitHub, LinkedIn, Twitter, etc.).
+
+Resume download button.
+
+Blog (Optional)
+
+Markdown-powered posts or CMS integration.
+
+Tags, reading time, dark mode toggle.
+
+Dark/Light Theme Toggle
+
+Remember user preference.
+
+3. Non-Functional Requirements
+Performance: Loads under 2s on 4G; lazy-load images and optimize assets.
+
+Accessibility: Follows WCAG 2.1 AA standards; keyboard navigation and ARIA tags.
+
+Responsive Design: Works across mobile, tablet, and desktop.
+
+SEO Friendly: Meta tags, sitemap, clean URLs.
+
+Tech Stack (Suggested):
+
+Frontend: React.js + Tailwind CSS / Next.js
+
+Hosting: Vercel / Netlify
+
+Forms: Formspree / EmailJS
+
+Analytics: Google Analytics or Plausible
+
+4. UI/UX Goals
+Clean, minimalistic, and modern design.
+
+Micro-interactions for hover, clicks, and scroll.
+
+Smooth animations using Framer Motion or GSAP.
+
+Section transitions and scroll effects (parallax, fade-ins).
+
+5. Stretch Goals
+Blog with search and tags.
+
+Multilingual support (i18n).
+
+Chatbot/assistant widget.
+
+Terminal-style "About Me" or CLI interface mode.

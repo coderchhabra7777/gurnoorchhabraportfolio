@@ -59,35 +59,40 @@ const Achievements = () => {
       title: 'Code-With-CISCO Innovation Challenge',
       description: 'Selected among the Top 25 teams nationally',
       year: '2024',
-      color: 'text-yellow-500'
+      color: 'text-yellow-500',
+      link: 'https://www.cisco.com/c/en/us/about/csr/impact/education.html'
     },
     {
       icon: FiAward,
       title: 'Amazon ML Summer School 2024',
       description: 'Selected for the prestigious program',
       year: '2024',
-      color: 'text-orange-500'
+      color: 'text-orange-500',
+      link: 'https://www.amazon.science/latest-news/amazon-announces-ml-summer-school-2024'
     },
     {
       icon: FiStar,
       title: 'Meta Hacker Cup T-shirt Winner',
       description: 'Ranked 1758th in Round 2',
       year: '2024',
-      color: 'text-blue-500'
+      color: 'text-blue-500',
+      link: 'https://www.facebook.com/codingcompetitions/hacker-cup'
     },
     {
       icon: FiTarget,
       title: 'ICPC Regionalist 2024',
       description: 'Qualified for ICPC Regional Contest',
       year: '2024',
-      color: 'text-purple-500'
+      color: 'text-purple-500',
+      link: 'https://icpc.global/'
     },
     {
       icon: FiAward,
       title: 'Branch Topper',
       description: 'Currently the branch topper with CGPA 9.38',
       year: '2025',
-      color: 'text-green-500'
+      color: 'text-green-500',
+      link: '#'
     }
   ];
 
@@ -219,7 +224,7 @@ const Achievements = () => {
                   key={index}
                   variants={cardVariants}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="bg-gray-50 dark:bg-dark-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300"
+                  className="bg-gray-50 dark:bg-dark-800 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group"
                 >
                   <div className="flex items-start space-x-4">
                     <div className={`p-3 rounded-lg bg-white dark:bg-dark-700 ${achievement.color}`}>
@@ -231,9 +236,23 @@ const Achievements = () => {
                         <h4 className="text-lg font-semibold text-gray-900 dark:text-white leading-tight">
                           {achievement.title}
                         </h4>
-                        <span className="text-sm text-gray-500 dark:text-gray-400 font-medium ml-2">
-                          {achievement.year}
-                        </span>
+                        <div className="flex items-center space-x-2 ml-2">
+                          <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">
+                            {achievement.year}
+                          </span>
+                          {achievement.link && achievement.link !== '#' && (
+                            <button
+                              onClick={() => window.open(achievement.link, '_blank')}
+                              className="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-600 transition-colors duration-200 opacity-0 group-hover:opacity-100"
+                              title="Learn more"
+                            >
+                              <FiExternalLink 
+                                size={16} 
+                                className="text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200" 
+                              />
+                            </button>
+                          )}
+                        </div>
                       </div>
                       
                       <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">

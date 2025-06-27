@@ -59,8 +59,20 @@ const About = () => {
             <motion.div variants={itemVariants} className="relative">
               <div className="relative w-80 h-80 mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-purple-500 rounded-full animate-pulse-slow"></div>
-                <div className="absolute inset-2 bg-gray-200 dark:bg-dark-700 rounded-full flex items-center justify-center">
-                  <FiUser size={120} className="text-gray-400 dark:text-gray-500" />
+                <div className="absolute inset-2 bg-white dark:bg-dark-700 rounded-full overflow-hidden">
+                  <img
+                    src="/images/projects/profile.jpg"
+                    alt="Gurnoor Chhabra"
+                    className="w-full h-full object-cover rounded-full"
+                    onError={(e) => {
+                      // Fallback to icon if image fails to load
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-gray-200 dark:bg-dark-700 rounded-full items-center justify-center hidden">
+                    <FiUser size={120} className="text-gray-400 dark:text-gray-500" />
+                  </div>
                 </div>
               </div>
               

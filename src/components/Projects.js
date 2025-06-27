@@ -68,7 +68,7 @@ const Projects = () => {
         'User-friendly encryption/decryption interface'
       ],
       github: 'https://github.com/coderchhabra7777/SPYx',
-      demo: '#',
+      demo: 'https://spyxsecrets.netlify.app/',
       status: 'Completed',
       impact: 'Achieved 99.9% data hiding success rate'
     },
@@ -94,10 +94,10 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: 'NXTBlogger',
+      title: 'LegendaryBlog',
       category: 'Full Stack Website',
       description: 'Developed a complete blogging platform supporting blog creation, viewing, and reactions.',
-      image: '/images/projects/nxtblogger.jpg',
+      image: '/images/projects/LegendaryBlog.png',
       longDescription: 'A modern, feature-rich blogging platform built with cutting-edge web technologies. Supports markdown editing, real-time comments, user authentication, blog categorization, and social features like likes and shares.',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io'],
       features: [
@@ -108,30 +108,31 @@ const Projects = () => {
         'Social features (likes, shares, follows)',
         'Responsive design for all devices'
       ],
-      github: 'https://github.com/gurnoorchhabra/nxtblogger',
-      demo: 'https://nxtblogger-demo.netlify.app',
+      github: 'https://github.com/coderchhabra7777/LegendaryBlog',
+      demo: 'https://legendaryblog.netlify.app/',
       status: 'Completed',
       impact: 'Supports 500+ active bloggers'
     },
     {
       id: 6,
-      title: 'Data Pipeline Optimization',
-      category: 'Backend Project',
-      description: 'Built scalable data pipelines using Airflow and Kafka for real-time data processing.',
-      image: '/images/projects/data-pipeline.jpg',
-      longDescription: 'Enterprise-grade data pipeline solution developed during internship at Cisco. Handles massive datasets with real-time processing capabilities, featuring automated scheduling, monitoring, and error handling.',
-      technologies: ['Python', 'Apache Airflow', 'Apache Kafka', 'MongoDB', 'PostgreSQL'],
+      title: 'MOVIX',
+      category: 'Full Stack Project',
+      description: 'A modern movie discovery platform with advanced search, filtering, and recommendation features.',
+      image: '/images/projects/MOVIX.png',
+      longDescription: 'MOVIX is a comprehensive movie discovery platform that provides users with an intuitive interface to explore movies, TV shows, and entertainment content. Features include advanced search capabilities, personalized recommendations, detailed movie information, and user-friendly navigation.',
+      technologies: ['React', 'JavaScript', 'CSS', 'API Integration', 'Responsive Design'],
       features: [
-        'Real-time data processing',
-        'Automated scheduling and monitoring',
-        'Error handling and recovery',
-        'Scalable architecture',
-        'Performance optimization'
+        'Advanced movie search and filtering',
+        'Personalized movie recommendations',
+        'Detailed movie information and ratings',
+        'Responsive design for all devices',
+        'Real-time data from movie databases',
+        'User-friendly interface and navigation'
       ],
-      github: '#',
-      demo: '#',
-      status: 'Professional Project',
-      impact: 'Processed 30M+ records in under 2 hours'
+      github: 'https://github.com/coderchhabra7777/MovieDB',
+      demo: 'https://movixgc.netlify.app/',
+      status: 'Completed',
+      impact: 'Enhanced movie discovery experience for users'
     }
   ];
 
